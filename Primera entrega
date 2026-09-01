@@ -54,11 +54,11 @@ nombre_buscar = input("Ingrese el nombre del estudiante a buscar: ")
 
 estudiante_encontrado = False
 for estudiante in estudiantes:
-    # El nombre es el primer elemento de la tupla (indice 0)
+    
     if estudiante[0].lower() == nombre_buscar.lower():
         print(f"¡Estudiante '{estudiante[0]}' encontrado en la lista!")
         estudiante_encontrado = True
-        break # Salir del bucle una vez que se encuentra el estudiante
+        break 
 
 if not estudiante_encontrado:
     print(f"No se encontró ningún estudiante con el nombre '{nombre_buscar}'.")
@@ -94,7 +94,7 @@ while True:
     numero = float(input("Ingrese un número: "))
 
     if numero == 0:
-        break # Finaliza el ciclo si el usuario ingresa 0
+        break 
 
     suma_total += numero
     contador_numeros += 1
@@ -113,11 +113,11 @@ print('\n--- Uso de break y continue (Números del 1 al 30) ---')
 for num in range(1, 31):
     if num == 25:
         print(f"¡Número {num} alcanzado! Finalizando el ciclo con break.")
-        break # Sale del ciclo si el número es 25
+        break 
 
     if num % 3 == 0:
         print(f"Número {num} es múltiplo de 3, saltando con continue.")
-        continue # Omite el resto del código en esta iteración si es múltiplo de 3
+        continue 
 
     print(f"Número procesado: {num}")
 
